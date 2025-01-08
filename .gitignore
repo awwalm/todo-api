@@ -1,0 +1,155 @@
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.yarn-integrity
+.pnp.*
+.pnpm-debug.log*
+yarn.lock
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+logs/**/*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.log
+
+# VS Code settings
+# *.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+artifact/
+
+# Dependency directories
+jspm_packages/
+# Sass / SCSS cache
+.sass-cache/
+# Webpack temporary files
+.next/
+out/
+dist/
+build/
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+junit.xml
+test-results.xml
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+.eslintcache
+
+# WebStorm and PhpStorm specific files
+.idea_modules/
+
+# Svelte
+__sapper__/
+svelte-check/
+
+# Angular
+.angular/cache/
+.angular/
+**/angular.json
+**/src/environments/*.ts
+# Angular build files
+dist/
+tmp/
+out-tsc/
+# Angular Server-side rendering (SSR)
+.angular/
+dist/
+tmp/
+
+# React Native
+.expo/
+*.expo
+*.expo-shared
+
+# React Native macOS
+ios/
+macos/
+
+# Next.js
+.next/
+out/
+
+# Gatsby files
+.cache/
+public/
+.cache-loader/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Vue.js
+.vuepress/dist
+.vuepress/.temp
+.vuepress/.cache
+dist/
+# Vite.js cache
+.vite/
+dist/
+coverage/
+
+# Storybook files
+.out/
+.storybook/
+
+# SvelteKit
+.svelte-kit/
+.svelte/
+
+# Haxe/JS output files
+out/
+
+# Others
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Electron
+dist_electron/
+
+# Manual entries
+notes/
