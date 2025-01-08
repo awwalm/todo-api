@@ -4,6 +4,11 @@
 
 The Todo API is a RESTful service built with Express.js and MySQL, implementing a robust MVC architecture. This API provides comprehensive functionality for managing todo items with professional-grade features including error handling, input validation, and search capabilities.
 
+### Deployment URL: [`https://todo-api-0eud.onrender.com`](https://todo-api-0eud.onrender.com/)
+
+The deployment URL carries a single endpoint ([`/todos`](https://todo-api-0eud.onrender.com/todos)).
+See [API documentation](#api-endpoints) below for full instructions.
+
 ## Table of Contents
 
 1. [Technical Architecture](#technical-architecture)
@@ -264,9 +269,19 @@ Execute the test suite:
 npm test
 ```
 
-Test coverage report:
+Testing production using PowerShell
 ```bash
-npm run test:coverage
+# Create Todo
+Invoke-RestMethod -Method Post -Uri "YOUR_DEPLOYED_URL/todos" -Body '{"title": "Test Todo", "description": "Testing with PowerShell"}' -ContentType "application/json"
+
+# Get All Todos
+Invoke-RestMethod -Uri "YOUR_DEPLOYED_URL/todos"
+
+# Update Todo (replace ID)
+Invoke-RestMethod -Method Put -Uri "YOUR_DEPLOYED_URL/todos/YOUR_TODO_ID" -Body '{"title": "Updated Todo", "description": "Updated with PowerShell", "completed": true}' -ContentType "application/json"
+
+# Delete Todo (replace ID)
+Invoke-RestMethod -Method Delete -Uri "YOUR_DEPLOYED_URL/todos/YOUR_TODO_ID"
 ```
 
 ## Monitoring

@@ -84,6 +84,7 @@ async function runTests() {
     method: 'DELETE'
   });
   console.assert(deleteResult.statusCode === 204, 'Delete should return 204');
+  
 
   console.log('All tests completed!');
   process.exit(0);

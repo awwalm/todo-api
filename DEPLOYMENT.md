@@ -33,9 +33,14 @@
       - Free Instance Type (keep default)
 
 5. **Database Setup on Render**
-   1. Click "New +" → "MySQL"
+   1. Click "New +" → "Private Service"
    2. Create new database
    3. Note connection details
+   **Alternate Procedure (or skip if previous step is suited)**
+   1. Headover to https://www.freemysqlhosting.net/
+   2. Configure your MySQL server instance
+   3. Obtain the credentials and head back to Render
+   4. While creating your service, specify the credentials in the environment variables
 
 6. **Environment Variables**
    Add to Render dashboard:
