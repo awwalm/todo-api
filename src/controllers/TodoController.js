@@ -9,6 +9,7 @@ const Todo = require("../models/Todo.js");
  * instance of {@link Todo}.
  */
 export class TodoController {
+  /**@param {Todo} todoModel  */
   constructor(todoModel) {
     if (!todoModel) throw new Error('TodoModel is required');
     this.todoModel = todoModel;
